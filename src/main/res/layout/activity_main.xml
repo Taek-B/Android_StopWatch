@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+
+    <Chronometer
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="90sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:id="@+id/chronometer"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:id="@+id/recordText"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100dp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="start"
+            android:textSize="30sp"
+            android:id="@+id/startBtn"
+            android:background="@drawable/round_button"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="stop"
+            android:textSize="30sp"
+            android:id="@+id/stopBtn"
+            android:background="@drawable/round_button"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="reset"
+            android:textSize="30sp"
+            android:id="@+id/resetBtn"
+            android:background="@drawable/round_button"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/recordBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/round_button"
+        android:gravity="center"
+        android:text="record"
+        android:textSize="30sp" />
+</LinearLayout>
